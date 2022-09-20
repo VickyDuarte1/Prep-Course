@@ -9,7 +9,7 @@ const nuevaString = 'Hola';
 const nuevoNum = 7;
 
 // Crea una variable booleana:
-const nuevoBool = if;
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
@@ -18,7 +18,7 @@ const nuevaResta = 10 - 5 === 5;
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === 5.2;
+const nuevoModulo = 21 % 5 === 1;
 
 
 
@@ -31,13 +31,17 @@ const nuevoModulo = 21 % 5 === 5.2;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  
+  console.log str ;
+
 }
 
-function suma(x, y) {
+function sumar (x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
+  var x= 10;
+  var y=5;
+ sumar x + y ; 
   
 }
 
