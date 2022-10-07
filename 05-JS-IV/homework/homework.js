@@ -64,10 +64,11 @@ function nuevoUsuario (nombre, email, password) {
   // Crea un nuevo objeto con las propiedades coincidiendo con los argumentos que se pasan a la función
   // Devuelve el objeto
   // Tu código:
-  var objeto {
-    nombre: nombre;
-    email: email;
-    password: password; 
+  var objeto= {
+
+    nombre: nombre,
+    email: email,
+    password: password, 
     
   }
   return objeto;
@@ -116,8 +117,10 @@ function verificarPassword (usuario, password) {
 function actualizarPassword (usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevaPassword"
   // Devuelve el objeto
-  // Tu código:
-usuario.password=== nuevaPassword;
+  // Tu código: 
+
+  usuario.password = nuevaPassword;
+
 return usuario;
 
 }
@@ -140,9 +143,10 @@ function pasarUsuarioAPremium (usuarios) {
   // Devuelve el array de usuarios
   // Tu código:
 
-  for(i=o;i<usuarios.length;i++){
+  for(i=0;i<usuarios.length;i++){
     usuarios[i].esPremium = true;
   }
+
 return usuarios;
 
 }
@@ -156,9 +160,12 @@ function sumarLikesDeUsuario (usuario) {
   // Tu código:
 
   var suma = 0;
-  for (i=0;i<usuarios.posts.length; i++){
-    suma= suma+usuario.posts[i].likes;
+
+  for (i=0; i < usuario.posts.length; i++){
+
+    suma= suma + usuario.posts[i].likes;
   }
+
 return suma;
 
 }
