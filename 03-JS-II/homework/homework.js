@@ -1,5 +1,7 @@
 // No cambies los nombres de las funciones.
 
+const { nuevoBool } = require("../../02-JS-I/homework/homework");
+
 function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
@@ -142,20 +144,19 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
   
+  if (num1==0 || num2==0 || num3==0){
+  return "Error";}
+
+  if (num1<0 || num2<0|| num3<0) {
+    return "Hay negativos";}
 
   if (num1>num2 && num1>num3 && num1>0){
   return "Número 1 es mayor y positivo";}
-  
-  else if (num3>num1 && num3>num2){
+   
+    else if (num3>num1 && num3>num2){
     return num3+1;}
-
-  while (num1<0 || num2<0 ||num3 < 0 ) {
-    do return "Hay negativos";}
-
-  while  (num1==0|| num2==0 || num3==0){
-  do return "Error";}
-
-  default false;
+   
+  else {return false;}
 
 }
 
@@ -166,17 +167,9 @@ function esPrimo(numero) {
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
   
-  // Casos especiales
-
-   if (numero == 0 || numero == 1 || numero == 4) return false;
-   
-   for (i = 2; i < numero / 2; i++) 
-    
-    if (numero % i == 0) return false;
-   
-    else {return true;
- }
-  
+if (numero==0 || numero ==1 || numero%2==0 || numero%3==0 && numero!==3 &&numero!==2 ){return false; }
+ 
+    else {return true;}
   
 }
 
@@ -209,13 +202,23 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  if (numero<999 && numero>99){return true;}
+  else {return false;}
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+
+  do  {
+   for (i=1;i<9;i++)
+    numero=numero+5;
+    return numero;
+    }
+  while (i=8);
+  return numero;
+
 }
 
 
